@@ -1,0 +1,237 @@
+/* type selectors */
+html {
+    background-image: url("/exercises/upfeathers/upfeathers.png");
+}
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    max-width: 960px;
+    width: 95%;
+    background-color: white;
+    margin: 1em auto;
+    padding: 0;
+    border: 1px solid black;
+}
+section, aside, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 25px;
+}
+
+a { font-weight: bold; }
+a:link { color: #800000; }
+a:visited { color: navy; }
+a:hover, a:focus { color: blue; }
+
+p { padding-bottom: 0.5em; }
+
+em { font-weight: bold; }
+
+/* the styles for the header */
+header {
+    color: white;
+    background: rgba(79,75,67,1);
+    background: -moz-linear-gradient(45deg, rgba(79,75,67,1) 0%, rgba(161,133,90,1) 16%, rgba(209,180,140,1) 30%, rgba(233,212,179,1) 61%, rgba(227,212,189,1) 80%, rgba(233,212,179,1) 100%);
+    /*background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(79,75,67,1)), color-stop(16%, rgba(161,133,90,1)), color-stop(30%, rgba(209,180,140,1)), color-stop(61%, rgba(233,212,179,1)), color-stop(80%, rgba(227,212,189,1)), color-stop(100%, rgba(233,212,179,1)));*/
+    background: -webkit-linear-gradient(45deg, rgba(79,75,67,1) 0%, rgba(161,133,90,1) 16%, rgba(209,180,140,1) 30%, rgba(233,212,179,1) 61%, rgba(227,212,189,1) 80%, rgba(233,212,179,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(79,75,67,1) 0%, rgba(161,133,90,1) 16%, rgba(209,180,140,1) 30%, rgba(233,212,179,1) 61%, rgba(227,212,189,1) 80%, rgba(233,212,179,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(79,75,67,1) 0%, rgba(161,133,90,1) 16%, rgba(209,180,140,1) 30%, rgba(233,212,179,1) 61%, rgba(227,212,189,1) 80%, rgba(233,212,179,1) 100%);
+    background: linear-gradient(45deg, rgba(79,75,67,1) 0%, rgba(161,133,90,1) 16%, rgba(209,180,140,1) 30%, rgba(233,212,179,1) 61%, rgba(227,212,189,1) 80%, rgba(233,212,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4b43', endColorstr='#e9d4b3', GradientType=1 );
+    padding-bottom: 1em;
+}
+
+header h2 {
+    font-family: 'Lobster', cursive;
+    /*font-size: 350%;*/
+    font-size: 230%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 3px 0 black;
+    padding-top: .25em;
+    margin-left: 25px;
+}
+header h3 {
+    font-family: "Times New Roman", Times, serif;
+    /*font-size: 150%;*/
+    font-size: 125%;
+    margin-left: 125px;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+    list-style: none;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    /*width: 190px;*/
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+/*#nav_menu ul li a.lastitem {*/
+    /*border-right: none;*/
+    /*width: 192px;*/
+/*}*/
+#nav_menu a.current {
+    color: gray;
+}
+
+/* the styles for the section */
+section {
+    width: 645px;
+    padding-right: 20px;
+    float: right;
+}
+section h1 {
+    font-size: 200%;
+    margin-bottom: 0.35em;
+    color: #800000;
+}
+section img {
+    float: left;
+    margin: 0 1.5em 1em 0;
+}
+
+/* the styles for the sidebar */
+aside {
+    width: 20%;
+    float: right;
+    padding: 1.25em 0;
+}
+aside h2 {
+    font-size: 125%;
+    color: #696969;
+    margin-top: 1.7em;
+    padding-bottom: .5em;
+}
+aside ul {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+aside li {
+    padding-bottom: 0.25em;
+}
+
+/* the styles for the footer */
+footer {
+    clear: both;
+    padding-top: 1em;
+    color: white;
+    background: rgba(233,212,179,1);
+    background: -moz-linear-gradient(left, rgba(233,212,179,1) 0%, rgba(233,212,179,1) 9%, rgba(233,212,179,1) 18%, rgba(227,212,189,1) 30%, rgba(233,212,179,1) 53%, rgba(209,180,140,1) 67%, rgba(161,133,90,1) 86%, rgba(79,75,67,1) 95%, rgba(79,75,67,1) 100%);
+    /*background: -webkit-gradient(left top, right top, color-stop(0%, rgba(233,212,179,1)), color-stop(9%, rgba(233,212,179,1)), color-stop(18%, rgba(233,212,179,1)), color-stop(30%, rgba(227,212,189,1)), color-stop(53%, rgba(233,212,179,1)), color-stop(67%, rgba(209,180,140,1)), color-stop(86%, rgba(161,133,90,1)), color-stop(95%, rgba(79,75,67,1)), color-stop(100%, rgba(79,75,67,1)));*/
+    background: -webkit-linear-gradient(left, rgba(233,212,179,1) 0%, rgba(233,212,179,1) 9%, rgba(233,212,179,1) 18%, rgba(227,212,189,1) 30%, rgba(233,212,179,1) 53%, rgba(209,180,140,1) 67%, rgba(161,133,90,1) 86%, rgba(79,75,67,1) 95%, rgba(79,75,67,1) 100%);
+    background: -o-linear-gradient(left, rgba(233,212,179,1) 0%, rgba(233,212,179,1) 9%, rgba(233,212,179,1) 18%, rgba(227,212,189,1) 30%, rgba(233,212,179,1) 53%, rgba(209,180,140,1) 67%, rgba(161,133,90,1) 86%, rgba(79,75,67,1) 95%, rgba(79,75,67,1) 100%);
+    background: -ms-linear-gradient(left, rgba(233,212,179,1) 0%, rgba(233,212,179,1) 9%, rgba(233,212,179,1) 18%, rgba(227,212,189,1) 30%, rgba(233,212,179,1) 53%, rgba(209,180,140,1) 67%, rgba(161,133,90,1) 86%, rgba(79,75,67,1) 95%, rgba(79,75,67,1) 100%);
+    background: linear-gradient(to right, rgba(233,212,179,1) 0%, rgba(233,212,179,1) 9%, rgba(233,212,179,1) 18%, rgba(227,212,189,1) 30%, rgba(233,212,179,1) 53%, rgba(209,180,140,1) 67%, rgba(161,133,90,1) 86%, rgba(79,75,67,1) 95%, rgba(79,75,67,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9d4b3', endColorstr='#4f4b43', GradientType=1 );
+}
+footer p {
+    font-size: 80%;
+    color: white;
+    margin-left: 25px;
+    padding-bottom: 1em;
+}
+
+#mobile_menu {
+    display: none; /* hide desktop nav menu */
+}
+
+/*
+*Halloween Ex 8, Tablet Portrait Spc 2:
+*Add a media query for screens with a max-width of 800 pixels...
+ */
+
+@media only screen and (max-width: 800px) {
+    html {
+        background-image: none; /* Remove background image */
+    }
+    body {
+        font-size: 90%; /* Reduce font size to 90 % */
+        box-shadow: none;
+    }
+
+}  /* end of tablet Portrait media query */
+
+
+
+
+/*
+*Halloween Ex. 8, Phone Landscape Spec 1:
+*Add a media query for screens with a max width of 767 pixels
+*(
+ */
+
+@media only screen and (max-width: 767px) {
+    /* Phone Landscape Spec 2 continued
+     * Show the mobile menu and hide the original 'desktop' version
+     * of the horizontal navigation menu
+     */
+    #nav_menu {
+        display: none; /* hide desktop (horizontal) nav menu */
+    }
+    #mobile_menu {
+        display: block; /*...and display a SlickNav menu in its place */
+    }
+    /* the styles you choose to put here are implements
+     * as needed to make the page "look right" on the tablet device */
+    header h2 {
+        font-size: 200%;
+    } /* end of Phone Landscape media query */
+    section {
+        width: 90%;
+        float: none; /* this IS important, so that the section and aside
+                      * are stacked don top of each other on smaller devices */
+        padding-left: 5%;
+        padding-bottom: 0.5em;
+    }
+    aside {
+        width: 90%; /* same width as section b/c we are now effectively
+                       using a ONE-column layout on the smaller devices */
+        float: none;
+        padding: 0 5% 1em 5%;
+    }
+    #nav_list ul {
+        width: 50%;
+        padding-left: 25%;
+        text-align: center;
+    }
+    #nav_list ul li a {
+        /*padding-left: 0;*/
+    }
+} /* end of Phone Landscape media query */
+
+/*
+*Halloween Ex 8, Phone Portrait Spec:
+*Add a media query that will be applied to screens
+*with a maximum width of 479px...
+ */
+@media only screen and (max-width: 479px) {
+    header h2 {
+        font-size: 180%; /* reduced from 230 % again and 230% above */
+    }
+    header h3 {
+        font-size: 115%; /* reduced from 125% */
+    }
+    section h1 {
+        font-size: 130%; /* reduced from 140% */
+    }
+    section h1:first-letter {
+        font-size: 180% /* reduced from 240% */
+    }
+
+} /* end of Phone Portrait media query */
+

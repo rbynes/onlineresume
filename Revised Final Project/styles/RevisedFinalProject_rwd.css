@@ -1,4 +1,3 @@
-/* type selectors */
 html {
     background-image: url("/exercises/upfeathers/upfeathers.png");
 }
@@ -31,7 +30,7 @@ p { padding-bottom: 0.5em; }
 
 em { font-weight: bold; }
 
-/* the styles for the header */
+
 header {
     color: white;
     background: rgba(79,75,67,1);
@@ -62,7 +61,7 @@ header h3 {
     margin-left: 125px;
 }
 
-/* the styles for the navigation menu */
+
 #nav_menu ul {
     list-style: none;
 }
@@ -81,15 +80,11 @@ header h3 {
     font-weight: bold;
     border-right: 2px solid white;
 }
-/*#nav_menu ul li a.lastitem {*/
-    /*border-right: none;*/
-    /*width: 192px;*/
-/*}*/
+
 #nav_menu a.current {
     color: gray;
 }
 
-/* the styles for the section */
 section {
     width: 645px;
     padding-right: 20px;
@@ -105,7 +100,6 @@ section img {
     margin: 0 1.5em 1em 0;
 }
 
-/* the styles for the sidebar */
 aside {
     width: 20%;
     float: right;
@@ -125,7 +119,6 @@ aside li {
     padding-bottom: 0.25em;
 }
 
-/* the styles for the footer */
 footer {
     clear: both;
     padding-top: 1em;
@@ -150,10 +143,6 @@ footer p {
     display: none; /* hide desktop nav menu */
 }
 
-/*
-*Halloween Ex 8, Tablet Portrait Spc 2:
-*Add a media query for screens with a max-width of 800 pixels...
- */
 
 @media only screen and (max-width: 800px) {
     html {
@@ -167,40 +156,26 @@ footer p {
 }  /* end of tablet Portrait media query */
 
 
-
-
-/*
-*Halloween Ex. 8, Phone Landscape Spec 1:
-*Add a media query for screens with a max width of 767 pixels
-*(
- */
-
 @media only screen and (max-width: 767px) {
-    /* Phone Landscape Spec 2 continued
-     * Show the mobile menu and hide the original 'desktop' version
-     * of the horizontal navigation menu
-     */
+   
     #nav_menu {
-        display: none; /* hide desktop (horizontal) nav menu */
+        display: none; 
     }
     #mobile_menu {
-        display: block; /*...and display a SlickNav menu in its place */
+        display: block; 
     }
-    /* the styles you choose to put here are implements
-     * as needed to make the page "look right" on the tablet device */
+  
     header h2 {
         font-size: 200%;
-    } /* end of Phone Landscape media query */
+    } 
     section {
         width: 90%;
-        float: none; /* this IS important, so that the section and aside
-                      * are stacked don top of each other on smaller devices */
+        float: none; 
         padding-left: 5%;
         padding-bottom: 0.5em;
     }
     aside {
-        width: 90%; /* same width as section b/c we are now effectively
-                       using a ONE-column layout on the smaller devices */
+        width: 90%; 
         float: none;
         padding: 0 5% 1em 5%;
     }
@@ -214,11 +189,7 @@ footer p {
     }
 } /* end of Phone Landscape media query */
 
-/*
-*Halloween Ex 8, Phone Portrait Spec:
-*Add a media query that will be applied to screens
-*with a maximum width of 479px...
- */
+
 @media only screen and (max-width: 479px) {
     header h2 {
         font-size: 180%; /* reduced from 230 % again and 230% above */
